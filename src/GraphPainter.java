@@ -24,15 +24,15 @@ public class GraphPainter extends JPanel {
 		total=Painter.TotalFrames;
 		if(lswing[0]>rswing[0])
 		{
-			llegstart=stance[2];
-			llegstop=stance[4]+5;
+			llegstart=stance[0];
+			llegstop=stance[2]+5;
 			rlegstart=stance[1];
 			rlegstop=stance[3]+5;
 		}
 		else
 		{
-			rlegstart=stance[2];
-			rlegstop=stance[4]+5;
+			rlegstart=stance[0];
+			rlegstop=stance[2]+5;
 			llegstart=stance[1];
 			llegstop=stance[3]+5;
 		}
@@ -124,7 +124,7 @@ public class GraphPainter extends JPanel {
 		k=480;
 		for(int i=llegstart;i<llegstop;i++)
 		{
-			g.drawLine(k,(130-(3*(int)(angle[i][7]))),k+2,(130-(3*(int)(angle[i+1][7]))));
+			g.drawLine(k,(630-(3*(int)(angle[i][7]))),k+2,(630-(3*(int)(angle[i+1][7]))));
 			k+=2;
 		}
 		
